@@ -1,4 +1,6 @@
 {
-  "user": "jerseyjackpot",
-  "secretcode": "front242"
+  "user": "roberta",
+  "secretcode": "roberta1",
+  "projTitle": "roberta ",
+  "gitrepo": "roberta23"
 }

@@ -1,7 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const specialchar = "!#$%&()*+,./:;<=>?@^[\\]^_`{|}~".split("");
-
 // const api = require('./utils/api.js')
 // const generateMarkdown = require('./utils/generateMarkdown.js')
 
@@ -11,7 +9,6 @@ inquirer.prompt([
         type: 'input',
         name: 'user',
         message: "What is your GitHub username?",
-
         validate: user => {
             if (user.length < 1 && user.length > 39) {
                 return "User name must be between 1 and 39 characters, please try again.";
@@ -19,11 +16,8 @@ inquirer.prompt([
             else if (user.startsWith("-", 0)) {
                 return "Username cannot start with a dash";
             }
-            // else if (user.length.includes(specialchar)) {
-            //     return "Username cannot contain special characters, only alpha/numeric and dashes...please try again";
-            // }
             else {
-                //all validation checks passed
+             
                 return true;
             }
         }
@@ -46,40 +40,37 @@ inquirer.prompt([
 
         }
 
-    } 
+    },
+    {
+        type: 'input',
+        message: 'Please enter your project title',
+        name: 'projTitle',
+        validate: projTitle => {
+            if (projTitle.length) {
+                return true
+            }
+            else {
+                return "Title is too short"
+            }
+        }
+
+    },
+    {
+        type: 'input',
+        name: 'gitrepo',
+        message: 'What is your repository name?',
+        validate: (gitrepo) => {
+            if (gitrepo.length) {
+                return true
+            } 
+            else {
+                console.log('Repo name invalid, please try again!')
+            }
+        }    
+    }
     // {
-    //     type: 'input',
-    //     message: 'Please enter your project title',
-    //     name: 'projTitle',
-    //     validate: projTitle => {
-    //         if (projTitle.length < ) {
-    //             return "Password is too short."
-    //         }
-    //         else if (secretcode.length > 32) {
-    //             return "Password is too long."
-    //         }
-    //         else {
-    //             return true;
-    //         }
-
-
-    //     }
 
     // }
-    // {
-    //     type: 'input',
-    //     name: 'gitrepo',
-    //     message: 'What is your repository name?'
-    //     validate: await api.getUser(user, gitrepo)
-    //         if(!user) {
-    //         console.error('Repo not found!')
-    //         } else {
-    //         console.log(`${ Object.fullName} found!`)
-    //         }
-
-    // }
-
-
 ]).then(response => {
     console.log(response.user);
     console.log(response.august);
@@ -90,9 +81,9 @@ inquirer.prompt([
     })
 });
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
+// function to write README file
+function writeToFile(fileName, data) {
+}
 
 // // function to initialize program
 // function init() {
