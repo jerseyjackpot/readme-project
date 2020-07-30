@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
+const api = require('./utils/api.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
-// const api = require('./utils/api.js')
-// const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // array of questions for user
 inquirer.prompt([
@@ -17,7 +17,6 @@ inquirer.prompt([
                 return "Username cannot start with a dash";
             }
             else {
-             
                 return true;
             }
         }
@@ -28,18 +27,15 @@ inquirer.prompt([
         name: 'secretcode',
         validate: secretcode => {
             if (secretcode.length < 8) {
-                return "Password is too short."
+                return "Password is too short.";
             }
             else if (secretcode.length > 32) {
-                return "Password is too long."
+                return "Password is too long.";
             }
             else {
                 return true;
             }
-
-
         }
-
     },
     {
         type: 'input',
@@ -47,13 +43,12 @@ inquirer.prompt([
         name: 'projTitle',
         validate: projTitle => {
             if (projTitle.length) {
-                return true
+                return true;
             }
             else {
-                return "Title is too short"
+                return "Title is too short";
             }
         }
-
     },
     {
         type: 'input',
@@ -61,38 +56,105 @@ inquirer.prompt([
         message: 'What is your repository name?',
         validate: (gitrepo) => {
             if (gitrepo.length) {
-                return true
+                return true;
             } 
             else {
-                console.log('Repo name invalid, please try again!')
+                return 'Repo name invalid, please try again!';
             }
         }    
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Please describe your project',
+        validate: (description) => {
+            if (description.length) {
+                return true;
+            } 
+            else {
+                return 'Please enter a detailed description of the project.';
+            }
+        }    
+    },
+    {
+        type: 'input',
+        name: 'instruct',
+        message: 'Please provide installation instructions:',
+        validate: (instruct) => {
+            if (instruct.length) {
+                return true;
+            } 
+            else {
+                return 'Please provide installation instructions.';
+            }
+        }    
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What can this project be used for?',
+        validate: (usage) => {
+            if (usage.length) {
+                return true;
+            } 
+            else {
+                return 'Please provide usage information.';
+            }
+        }    
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Which License is this project covered under?',
+         choices: [
+                    "MIT",
+                    "APACHE 2.0",
+                    "GPL 3.0",
+                    "None",
+                ]
+    },
+    {
+        type: 'input',
+        name: 'guidelines',
+        message: 'What does the user need to know about contributing to the repo?',
+        validate: (guidelines) => {
+            if (guidelines.length) {
+                return true;
+            } 
+            else {
+                return 'Please provide complete contributor information for the repo.';
+            }
+        }    
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What command should be run to test?',
+        validate: (test) => {
+            if (test.length) {
+                return true;
+            }
+            else {
+                return 'Please provide test commands.';
+            }
+        }
     }
-    // {
 
-    // }
-]).then(response => {
-    console.log(response.user);
-    console.log(response.august);
+])
+// // function to write README file
+// function writeToFile(fileName, profileData) {
+// };
 
-    fs.writeFile("readme.md", JSON.stringify(response, null, 2), 'utf8', err => {
-        if (err) return console.log(err);
-        return console.log("We finished writing the file.");
-    })
-});
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
-
-
-// with the title of your project and 
-// sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+function init() {
+    inquirer.prompt(questions).then(results => {
+        console.log(results)
+        api.getUser(results.user).then(({ profileData }) => {
+            fs.writeFile("readme.md", generateMarkdown({...results, ...profileData}), 'utf8', err => {
+                if(err) return console.log(err);
+                return console.log("We finished writing the file.");
+            })
+        })
+        })
+    };
+// function call to initialize program
+init();
