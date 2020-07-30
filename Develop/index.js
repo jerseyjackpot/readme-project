@@ -140,21 +140,21 @@ inquirer.prompt([
         }
     }
 
-])
+]);
 // // function to write README file
-// function writeToFile(fileName, profileData) {
-// };
+function writeToFile(fileName, profileData) {
+};
 
 function init() {
     inquirer.prompt(questions).then(results => {
-        console.log(results)
-        api.getUser(results.user).then(({ profileData }) => {
-            fs.writeFile("readme.md", generateMarkdown({...results, ...profileData}), 'utf8', err => {
+        console.log(results);
+        api.get(results.user).then(({ profileData }) => {
+            fs.writeFile("readme.md",  'utf8', generateMarkdown({...results, ...profileData}), err => {
                 if(err) return console.log(err);
                 return console.log("We finished writing the file.");
             })
         })
         })
-    };
+    }
 // function call to initialize program
 init();
