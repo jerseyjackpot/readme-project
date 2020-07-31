@@ -1,10 +1,10 @@
 
-const usage =(info)=>{
-  if(info !== 'None'){
-    return `This project is licensed under ${info} license.`;
-  }
-  return '';
-}
+// const usage =(info)=>{
+//   if(info !== 'None'){
+//     return `This project is licensed under ${info} license.`;
+//   }
+//   return '';
+// }
 
 // function to generate markdown for README
 const generateMarkdown = (profileData) => {
@@ -39,9 +39,8 @@ ${profileData.description}
 ### Tests 
 To run tests, run the command:
 
-````
 ${profileData.test}
-````
+
 ### Questions 
 
 If you have any questions about the repo, open an issue or contact ${profileData.user} directly at [${profileData.email}]
@@ -49,4 +48,6 @@ If you have any questions about the repo, open an issue or contact ${profileData
   `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {
+  generateMarkdown : generateMarkdown
+}
