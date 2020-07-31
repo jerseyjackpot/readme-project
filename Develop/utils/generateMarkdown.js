@@ -11,8 +11,6 @@ const generateMarkdown = (profileData) => {
   return `
 # ${profileData.projTitle}
 
-## INFO
-
 ## Description 
 
 ${profileData.description}
@@ -27,6 +25,8 @@ ${profileData.description}
 
 * [Questions](#Questions)
 
+
+## Information for use and installation
 
 ### Installation 
 
@@ -45,7 +45,7 @@ ${profileData.license}
 ${profileData.guidelines}
 
 ### Tests 
-To run tests, run the command:
+To run, please install locally and type the following the command:
 
 ${profileData.test}
 
