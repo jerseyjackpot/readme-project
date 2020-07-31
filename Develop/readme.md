@@ -1,11 +1,11 @@
 
 # Good README Generator
 
-[![![GitHub license](https://img.shields.io/badge/license-MIT-blue)]
+[GitHub license](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description 
 
-Application to create a styled readme..
+Application to create a styled readme.
 
 ## Table of Contents 
 
