@@ -1,7 +1,7 @@
 
-# Good README Generator
+# Good Readme Generator
 
-[GitHub license](https://img.shields.io/badge/license-MIT-blue)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue)]
 
 ## Description 
 
