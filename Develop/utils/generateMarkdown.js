@@ -28,13 +28,21 @@ ${profileData.description}
 * [Questions](#Questions)
 
 
-### Installation ${profileData.instruct}
+### Installation 
 
-### Usage ${profileData.usage}
+${profileData.instruct}
 
-## License ${profileData.license}
+### Usage 
 
-### Contributing ${profileData.guidelines}
+${profileData.usage}
+
+## License 
+
+${profileData.license}
+
+### Contributing 
+
+${profileData.guidelines}
 
 ### Tests 
 To run tests, run the command:
@@ -43,7 +51,7 @@ ${profileData.test}
 
 ### Questions 
 
-If you have any questions about the repo, open an issue or contact ${profileData.user} directly at [${profileData.email}]
+If you have any questions about the repo, open an issue or contact ${profileData.user} directly at ${profileData.email}.
 
   `;
 }
