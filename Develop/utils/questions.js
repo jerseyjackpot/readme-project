@@ -96,7 +96,7 @@ const questionsArr = [{
     }    
 },
 {
-    type: 'checkbox',
+    type: 'list',
     name: 'license',
     message: 'Which License is this project covered under?',
      choices: [
