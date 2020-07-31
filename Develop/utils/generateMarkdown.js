@@ -14,7 +14,7 @@ const generateMarkdown = (profileData) => {
   return `
 # ${profileData.projTitle}
 
-[![![GitHub license](https://img.shields.io/badge/license-${badgeLicense}-blue)]
+[GitHub license](https://img.shields.io/badge/license-${badgeLicense}-blue)
 
 ## Description 
 
