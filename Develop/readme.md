@@ -1,11 +1,11 @@
 
 # Good README Generator
 
-## INFO
+[![![GitHub license](https://img.shields.io/badge/license-MIT-blue)]
 
 ## Description 
 
-Application using node.js to create a styled readme.
+Application to create a styled readme..
 
 ## Table of Contents 
 
@@ -17,6 +17,8 @@ Application using node.js to create a styled readme.
 
 * [Questions](#Questions)
 
+
+## Information for use and installation
 
 ### Installation 
 
@@ -35,12 +37,13 @@ MIT
 N/A
 
 ### Tests 
-To run tests, run the command:
+To run, please install locally and type the following the command:
 
 node index.js
 
 ### Questions 
 
 If you have any questions about the repo, open an issue or contact jerseyjackpot directly at jerseyjackpot@gmail.com.
+You can also visit my [Github] (https://github.com/readme-project) 
 
   
