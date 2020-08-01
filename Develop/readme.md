@@ -1,11 +1,11 @@
 
 # Good README Generator
 
-!GitHub license(https://img.shields.io/badge/license-MIT-blue)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description 
 
-Application to generate a formatted readme
+Making an organized and styled readme file.
 
 ## Table of Contents 
 
@@ -26,7 +26,7 @@ npm install node, inquirer
 
 ### Usage 
 
-Making an organized and styled readme file.
+Generating a formatted readme.
 
 ## License 
 
@@ -43,7 +43,7 @@ node index.js
 
 ### Questions 
 
-If you have any questions about the repo, open an issue or contact jerseyjackpot directly at jerseyjackpot@gmail.com.
+If you have any questions about the repo, open an issue or contact jerseyjackpot@gmail.com directly at jerseyjackpot@gmail.com.
 You can also visit my [Github] (https://github.com/readme-project) 
 
   
