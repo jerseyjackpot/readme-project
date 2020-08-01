@@ -5,7 +5,7 @@
 
 ## Description 
 
-Making an organized and styled readme file.
+An application to create a stylized and formatted readme file. 
 
 ## Table of Contents 
 
@@ -22,11 +22,11 @@ Making an organized and styled readme file.
 
 ### Installation 
 
-npm install node, inquirer
+install node and inquirer
 
 ### Usage 
 
-Generating a formatted readme.
+Quickly creating a formatted readme file. 
 
 ## License 
 
