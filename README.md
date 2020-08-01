@@ -54,7 +54,7 @@ You can also visit my [Github](https://github.com/jerseyjackpot/readme-project) 
 
 * Because this is a command-line application that won’t be deployed, I provided a walkthrough video that demonstrates the functionality of the application. 
 
-Develop/images-recording/Screen Recording 2020-08-01 at 1.10.45 PM.gif
+![Demo video](Develop/images-recording/Screen Recording 2020-08-01 at 1.10.45 PM.gif)
 
 * The URL of the GitHub repository. 
 
