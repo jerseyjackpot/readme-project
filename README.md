@@ -54,7 +54,7 @@ You can also visit my [Github](https://github.com/jerseyjackpot/readme-project) 
 
 * Because this is a command-line application that won’t be deployed, I provided a walkthrough video that demonstrates the functionality of the application. 
 
-![Demo video](https://github.com/jerseyjackpot/readme-project/blob/master/Develop/images-recording/Screen%20Recording%202020-08-01%20at%201.10.45%20PM.gif)
+![Demo video](https://github.com/jerseyjackpot/readme-project/blob/master/Develop/images-recording/Demo.gif)
 
 * The URL of the GitHub repository. 
 
