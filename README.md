@@ -22,8 +22,21 @@ When creating an open source project on GitHub, it is important to have a qualit
 
 * [Questions](#Questions)
 
+## Demo and URL with Screenshot of final Readme
+* Because this is a command-line application that won’t be deployed, I provided a walkthrough video that demonstrates the functionality of the application. 
 
-## Information for use and installation
+![Demo video](https://github.com/jerseyjackpot/readme-project/blob/master/Develop/images-recording/Demo.gif)
+
+* The URL of the GitHub repository. 
+
+https://github.com/jerseyjackpot/readme-project
+
+* A sample README.md file snapshot provided below (created using the application).
+
+![Screen Shot 2020-08-01 at 1 18 50 PM](https://user-images.githubusercontent.com/64985702/89106823-eaa22100-d3fa-11ea-839d-4e9f4947276b.png)
+
+
+## Information for use/Installation
 
 ### Installation 
 
@@ -52,14 +65,3 @@ If you have any questions about the repo, open an issue or contact jerseyjackpot
 You can also visit my [Github](https://github.com/jerseyjackpot/readme-project) Good README Generator
 
 
-* Because this is a command-line application that won’t be deployed, I provided a walkthrough video that demonstrates the functionality of the application. 
-
-![Demo video](https://github.com/jerseyjackpot/readme-project/blob/master/Develop/images-recording/Demo.gif)
-
-* The URL of the GitHub repository. 
-
-https://github.com/jerseyjackpot/readme-project
-
-* A sample README.md file for a project repository generated using the application.
-
-![Screen Shot 2020-08-01 at 1 18 50 PM](https://user-images.githubusercontent.com/64985702/89106823-eaa22100-d3fa-11ea-839d-4e9f4947276b.png)
