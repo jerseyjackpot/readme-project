@@ -43,7 +43,7 @@ node index.js
 
 ### Questions 
 
-If you have any questions about the repo, open an issue or contact jerseyjackpot@gmail.com directly at jerseyjackpot@gmail.com.
-You can also visit my [Github] (https://github.com/readme-project) 
+If you have any questions about the repo, open an issue or contact jerseyjackpot directly at jerseyjackpot@gmail.com.
+You can also visit my [Github](https://github.com/jerseyjackpot/readme-project) 
 
   

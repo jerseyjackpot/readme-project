@@ -57,7 +57,7 @@ ${profileData.test}
 ### Questions 
 
 If you have any questions about the repo, open an issue or contact ${profileData.user} directly at ${profileData.email}.
-You can also visit my [Github] (https://github.com/${profileData.gitrepo}) 
+You can also visit my [Github](https://github.com/${profileData.user}/${profileData.gitrepo}) 
 
   `;
 }
