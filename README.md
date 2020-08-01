@@ -60,6 +60,6 @@ You can also visit my [Github](https://github.com/jerseyjackpot/readme-project) 
 
 https://github.com/jerseyjackpot/readme-project
 
-* A sample README.md file for a project repository generated using your application.
+* A sample README.md file for a project repository generated using the application.
 
 ![Screen Shot 2020-08-01 at 1 18 50 PM](https://user-images.githubusercontent.com/64985702/89106823-eaa22100-d3fa-11ea-839d-4e9f4947276b.png)
