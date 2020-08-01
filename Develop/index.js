@@ -4,6 +4,7 @@ const api = require('./utils/api.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const questionsArr = require('./utils/questions.js');
 
+
 inquirer.prompt(questionsArr).then(responseObj => {
     // console.log(responseObj);
     const finishedMarkdown = generateMarkdown.generateMarkdown(responseObj);
